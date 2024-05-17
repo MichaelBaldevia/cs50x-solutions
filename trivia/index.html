@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            function multiplechoice(answer)
+            {
+                if (answer == "tungsten")
+                {
+                    document.getElementById("checker").innerHTML = "Correct!"
+                    document.getElementById(answer).style.backgroundColor = "green"
+                }
+                else
+                {
+                    document.getElementById("checker").innerHTML = "Incorrect!"
+                    document.getElementById(answer).style.backgroundColor = "red"
+                }
+            }
+            function free_response()
+            {
+                if ( document.getElementById("oak_answer").value.toUpperCase() == "ACORN")
+                {
+                    document.getElementById("free_checker").innerHTML = "Correct!"
+                }
+                else
+                {
+                    document.getElementById("free_checker").innerHTML = "Incorrect!"
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3>Which chemical element has the symbol W</h3>
+                <p id="checker"></p>
+                <button onclick="multiplechoice(this.id)" id="tin">TIN</button>
+                <button onclick="multiplechoice(this.id)" id="tungsten">TUNGSTEN</button>
+                <button onclick="multiplechoice(this.id)" id="mercury">MERCURY</button>
+                <button onclick="multiplechoice(this.id)" id="potassium">POTASSIUM</button>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>What is the name given to the fruit of an oak tree?</h3>
+                <p id="free_checker"></p>
+                <input type="text" id="oak_answer">
+                <button onclick="free_response()">Check Answer</button>
+            </div>
+        </div>
+    </body>
+</html>

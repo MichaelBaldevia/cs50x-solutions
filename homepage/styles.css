@@ -1,0 +1,50 @@
+body
+{
+    background-color: #6c757d;
+}
+
+.active-page
+{
+    display: inline-block;
+    margin: 10px 0px 0px 5px;
+    font-size: 30px;
+}
+.inactive-page
+{
+    display: inline;
+    margin: 5px 0px;
+    font-size: 15px;
+}
+.subclasses
+{
+    margin-left:2.5%;
+    border:none;
+
+}
+.carousel-images
+{
+    margin:auto;
+}
+.card
+{
+    margin:auto;
+    display:inline-block;
+}
+.class-card
+{
+    text-align:center;
+}
+#image-card
+{
+    height:500px;
+}
+#ripper
+{
+    text-align:center;
+}
+#ripper-desc
+{
+    margin: 5% 30%;
+    color:#f8f9fa;
+    padding: 2%
+}

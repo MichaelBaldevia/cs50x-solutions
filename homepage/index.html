@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>Dragon Nest: Assassin Class</title>
+    </head>
+    <script type="text/javascript">
+      function redirect(page) {
+          location.href = page;
+      }
+  </script>
+    <body>
+        <header>
+            <nav class="navbar navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand assassin-page"href="#">
+                        <img src="assassin-logo.png" alt="" width="50" height="50" class="d-inline-block">
+                        <p class="active-page">Assassin</p>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="navbar-brand dropdown-toggle" href="chaser.html" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="chaser-logo.webp" alt="" width="30" height="30" class="d-inline-block">
+                                <p class="inactive-page">Chaser Classes</p>
+                            </a>
+                            <ul class="dropdown-menu navbar-dark bg-dark subclasses" aria-labelledby="navbarScrollingDropdown">
+                                <li>
+                                    <a class="navbar-brand" onclick="redirect('chaser.html')" hre="">
+                                        <img src="chaser-logo.webp" alt="" width="30" height="30" class="d-inline-block">
+                                        <p class="inactive-page">Chaser</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="navbar-brand" onclick="redirect('ripper.html')" href="" >
+                                        <img src="ripper-logo.png" alt="" width="30" height="30" class="d-inline-block">
+                                        <p class="inactive-page">Ripper</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="navbar-brand" onclick="redirect('raven.html')" href="">
+                                        <img src="raven-logo.png" alt="" width="30" height="30" class="d-inline-block">
+                                        <p class="inactive-page">Raven</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="navbar-brand dropdown-toggle" href="bringer.html" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="Bringer-Icon.webp" alt="" width="30" height="30" class="d-inline-block">
+                                <p class="inactive-page">Bringer classes</p>
+                            </a>
+                            <ul class="dropdown-menu navbar-dark bg-dark subclasses" aria-labelledby="navbarScrollingDropdown">
+                                <li>
+                                    <a class="navbar-brand" onclick="redirect('bringer.html')"  href="">
+                                        <img src="chaser-logo.webp" alt="" width="30" height="30" class="d-inline-block">
+                                        <p class="inactive-page">Bringer</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="navbar-brand" onclick="redirect('Abysswalker.html')" href="" >
+                                        <img src="abysswalker-logo.png" alt="" width="30" height="30" class="d-inline-block">
+                                        <p class="inactive-page">Abyss Walker</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="navbar-brand" onclick="redirect('LightFury.html')" href="">
+                                        <img src="LF_Logo.png" alt="" width="30" height="30" class="d-inline-block">
+                                        <p class="inactive-page">Light Fury</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+            </nav>
+        </header>
+        <main>
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="2000">
+                    <img src="assassin.png" class="d-block h-15 justify-content-center carousel-images" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Assassin</h5>
+                      <p>Assassins are melee combat specialists who use Scimitars and Crooks to attack enemies at blinding speeds. He is also adept in fending off enemies from a distance using ninja weapons such as chains, kunais and shurikens.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="Chaser.png" class="d-block h-15 justify-content-center carousel-images" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Chaser</h5>
+                      <p>Chasers possesses assassination weapons that have been handed down from Ancient times</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="bringer.png" class="d-block h-15 justify-content-center carousel-images" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Bringer</h5>
+                      <p>Bringer is the guide of light and darkness. He has 2 faces, light and dark. </p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+              <div class="class-card">
+                <div class="card bg-dark" style="width: 14rem;" id="image-card">
+                  <img src="chaser-logo.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text text-light">Chasers possesses assassination weapons that have been handed down from Ancient times. He hides his weapons surreptitiously in his clothes and uses them to finish off his enemies instantly.</p>
+                  </div>
+                </div>
+
+                <div class="card bg-dark" style="width: 14rem;"  id="image-card">
+                  <img src="bringer-icon.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text text-light">Bringer is the guide of light and darkness. He has 2 faces, light and dark. The Bringer specializes in using a dagger and chakra – which is the energy from within his inner self. He also summons various Assassin comrades</p>
+                  </div>
+                </div>
+              </div>
+        </main>
+    </body>
+</html>

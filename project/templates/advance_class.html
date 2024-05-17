@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Dragon Nest Base Class
+{% endblock %}
+
+{% block main %}
+    <div id="ripper" >
+        <img src="{{class_image}}" class="img-fluid advace_class_img" alt="...">
+    </div>
+    <div class="base_class_desc" >
+        <p>{{ class_desc }}</p>
+        <img src="{{ class_image_logo }}" class="img-fluid class_logo_img" alt="...">
+    </div>
+{% endblock %}

@@ -1,0 +1,11 @@
+sort1 uses: Bubble sort
+
+How do you know?: It's sorting capability in sorted value is the shortest while sorting for random value took the longest time compared to sort3.
+
+sort2 uses: Merge sort
+
+How do you know?: It's sorting for the sorted value is almost the same time with sorting for random value while being the fastest sort among the three sorting program.
+
+sort3 uses: Selection sort
+
+How do you know?: It's sorting for the sorted value is almost the same time with sorting for random value but the process time remains sub efficient compared to sort2.

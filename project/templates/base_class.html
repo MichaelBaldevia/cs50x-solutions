@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Dragon Nest Base Class
+{% endblock %}
+
+{% block main %}
+    <div id="ripper" >
+        <img src="{{class_image}}" class="img-fluid class_img" alt="...">
+    </div>
+    <div class="base_class_desc" >
+        <p>{{ class_desc }}</p>
+        <img src="{{ class_image_logo }}" class="img-fluid class_logo_img" alt="...">
+    </div>
+
+    <form action="/advance_class" method="post">
+        <div class="container mt-5">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-md-8">
+                    <form id="regForm">
+                        <h1 id="register">Dragon Nest Advance Class</h1>
+                        <div class="all-steps" id="all-steps">
+                            {% for survey_questions in questionnaires %}
+                            <span class="step"><i class="fa fa-user"></i></span>
+                            {% endfor %}
+                        </div>
+                        {% for key in questionnaires %}
+                        <div class="tab">
+                            <h6>{{ key }}</h6>
+                            <select class="form-control" name = "{{ questionnaires_numbering[key] }}">
+                                {% for answers in questionnaires[key] %}
+                                <option value="{{ questionnaires[key][answers] }}">{{answers}}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        {% endfor %}
+                        <div class="thanks-message text-center" id="text-message"> <img src="https://i.imgur.com/O18mJ1K.png" width="100" class="mb-4">
+                            <h3>Thankyou for your feedback!</h3> <span>Thanks for your valuable information. It helps us to improve our services!</span>
+                            <button type="submit" id="submitbtn" > <i class="btn btn-success">Submit</i></button>
+                        </div>
+                        <div style="overflow:auto;" id="nextprevious">
+                            <div style="float:right;"> <button type="button" id="prevBtn" onclick="nextPrev(-1)"><img src="/static/Form/icons8-sort-left-64.png" width="30px" height="30px"></button> <button type="button" id="nextBtn" onclick="nextPrev(1)"><i class="fa fa-angle-double-right"></i></button> </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+      </form>
+{% endblock %}
